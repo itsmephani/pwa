@@ -1,0 +1,16 @@
+html,
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  height: 50px;
+}
+
+
+header.app__offline {
+  background-color: rgba(0, 0, 0, 0.8);
+}
