@@ -2,8 +2,8 @@
   'use strict';
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register(window.location.href + 'service-worker.js',{
-        scope: '/'
+    navigator.serviceWorker.register(window.location.pathname + 'service-worker.js',{
+        scope: window.location.pathname
       }).then( registration => {
         console.log(registration);
       })
