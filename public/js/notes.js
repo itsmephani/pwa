@@ -12,9 +12,9 @@
 
     if (localStorage.getItem(this.getLocalStorageKey_())) {
       this.notes = localStorage.getItem(this.getLocalStorageKey_());
-      this.notesEditor.textContent = this.notes;
+      this.notesEditor.innerHTML = this.notes;
     } else {
-      this.notesEditor.textContent = this.element.getAttribute('placeholder');
+      this.notesEditor.innerHTML = this.element.getAttribute('placeholder');
     }
 
     // Bind events.
@@ -22,12 +22,12 @@
   }
 
   Notes.prototype.takeNotes = function() {
-    let textContent = this.element.textContent;
-    this.notes = textContent;
+    let notes = this.element.innerHTML;
+    this.notes = notes;
     localStorage.setItem(this.getLocalStorageKey_(), this.notes);
     // Show placeholder if content is empty.
     if (!this.notes) {
-      this.notesEditor.textContent = this.element.getAttribute('placeholder');
+      this.notesEditor.innerHTML = this.element.getAttribute('placeholder');
     } 
   };
 

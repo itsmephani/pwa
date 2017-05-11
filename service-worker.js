@@ -18,10 +18,12 @@
     var cacheName = 'v1.0';
 
     var filesToCache = [
-        // './public/css/style.css',
+        '/',
+        './public/css/style.css',
         './public/css/toast.css',
         './public/js/app.js',
-        './public/js/toast.js'
+        './public/js/toast.js',
+        './public/js/notes.js'
     ];
 
     // Install Service Worker
