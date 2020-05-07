@@ -1,7 +1,7 @@
 {
-  "name": "PWA",
-  "short_name": "PWA",
-  "description": "Progressive Web App",
+  "name": "Scribble",
+  "short_name": "Scribble",
+  "description": "Scribble",
   "start_url": "./index.html?utm=homescreen",
   "display": "standalone",
   "orientation": "portrait",
