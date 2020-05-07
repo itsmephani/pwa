@@ -22,7 +22,7 @@
   }
 
   Notes.prototype.takeNotes = function() {
-    let notes = this.element.innerHTML;
+    let notes = this.notesEditor.innerHTML;
     this.notes = notes;
     localStorage.setItem(this.getLocalStorageKey_(), this.notes);
     // Show placeholder if content is empty.
